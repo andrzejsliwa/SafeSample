@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="..\Shared\Shared.fs" />
+        <Compile Include="Database.fs" />
+        <Compile Include="Server.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <DotNetCliToolReference Include="dotnet-fake" Version="5.0.0" />
+    </ItemGroup>
+    <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
